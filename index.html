@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Assingment-1</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="glass-nav">
+    <div class="logo">SWEET<span>HOME</span></div>
+    <ul class="nav-links">
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#enquiry" class="btn-primary">Inquiry</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Find Your <span>Future</span> Home.</h1>
+      <p>Minimalist design meets luxury living.</p>
+    </div>
+  </header>
+
+  <section id="gallery" class="container">
+    <div class="section-header">
+      <h2>Property Gallery</h2>
+      <div class="underline"></div>
+    </div>
+
+    <div class="simple-grid">
+      <div class="gallery-img">
+        <img src="https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg" alt="House 1">
+      </div>
+      <div class="gallery-img">
+        <img src="https://images.pexels.com/photos/5043840/pexels-photo-5043840.jpeg" alt="House 2">
+      </div>
+      <div class="gallery-img">
+        <img src="https://img.freepik.com/premium-photo/real-estate-image-background-beautiful-house-front-view_800563-4692.jpg" alt="House 3">
+      </div>
+      <div class="gallery-img">
+        <img src="https://wallpapercave.com/wp/wp4110663.jpg" alt="House 4">
+      </div>
+    </div>
+  </section>
+
+  <section id="enquiry" class="contact-section">
+    <div class="glass-card">
+      <h2>Get In Touch</h2>
+      <form>
+  <div class="input-group">
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+  </div>
+  
+  <div class="input-group">
+    <input type="tel" placeholder="Phone Number" pattern="[0-9]{10,15}" required>
+    <select required>
+      <option value="">Select Property Type</option>
+      <option>Apartment</option>
+      <option>Villa</option>
+      <option>Commercial</option>
+    </select>
+  </div>
+
+  <textarea placeholder="Your Message" rows="4" required></textarea>
+  
+  <div class="form-buttons">
+    <button type="submit" class="submit-btn">Submit Inquiry</button>
+    <button type="button" class="call-btn" onclick="alert('Our team will contact you shortly!')">Request Call</button>
+  </div>
+</form>
+    </div>
+  </section>
+
+</body>
+</html>
